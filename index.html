@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+
+        <title>Walt Disney World</title>
+        <body>
+            <!-- navigation -->
+            <nav class="nav">
+                <h1 class="logo">Adventure</h1>
+                <ul class="links">
+                    <li class="active"><a href="#"></a>Home</li>
+                    <li><a href="#"></a>Parks</li>
+                    <li><a href="#"></a>Events</li>
+                    <li><a href="#"></a>About</li>
+                    <li class="click"><a href="#"></a>Contact Me</li>
+                </ul>
+                <img src="images/menu-btn.png" alt="Menu button" class="menu-btn">
+            </nav>
+
+            <header>
+                <div class="header-content">
+                    <h2>Explore Walt Disney World</h2>
+                    <div class="line"></div>
+                    <h1>A magical place</h1>
+                    <a href="#" class="click">Learn More</a>
+                </div>
+            </header>
+
+            <section class="events">
+                <div class="title">
+                    <h1>Upcoming Events</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/tron.jpg" alt="Tron at DisneyWorld">
+                        <h4>TRON Lightcycle / Run</h4>
+                        <p>Speed across the Grid in Disney's newest and fastest ride.</p>
+                        <a href="#" class="click">Learn More</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/EPCOT.jpg" alt="DisneyWorld EPCOT">
+                        <h4>EPCOT Flower and Garden Festival</h4>
+                        <p>Enjoy EPCOT's springtime event and see beautiful topiaries, gardens, 
+                            flowers, live entertainment, tasty foods and more––March 1 - July 5, 2023!</p>
+                        <a href="#" class="click">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    Coded by <a href="https://github.com/BenevolenceEM">Benevolence Ed-Malik</a>.
+                </div>
+            </footer>
+
+            <script>
+               const menuBtn = document.querySelector('.menu-btn')
+               const links = document.querySelector('.links')
+
+               menuBtn.addEventListener('click',()=>{
+               links.classList.toggle('mobile-menu')
+               })
+            </script>
+        </body>
+    </head>
+</html>
