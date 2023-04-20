@@ -100,20 +100,28 @@ header {
 section {
     width: 80%;
     margin: 80px auto;
+
 }
 
 .title {
     text-align: center;
     font-size: 4vmin;
     color:goldenrod;
+    padding-top: 1rem;
 }
-
-.row {
+.row-wrapper{
     display: flex;
+}
+.row {
+    padding-top: 3rem;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     background-color: aqua;
+    line-height: 2;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: 2px 5px rgb(25, 214, 214);
 }
 
 .row .column {
