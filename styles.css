@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav h1 {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links li {
+    margin: 0 30px;
+}
+
+.active {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.click {
+    padding: 8px 15px;
+    background: black;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/image1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: black;
+    margin: 10px auto;
+    border-radius: 5px;;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:goldenrod;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.row .column {
+    display: flex;
+    flex-basis: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.footer a:hover {
+    color: hsl(212, 21%, 14%);
+    text-decoration: underline;
+}
+
+/* Mobile device */
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: hsl(348, 77%, 15%);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    
+    /* #89128d */
+
+    .links li {
+        margin: 30px auto;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+}
