@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Navigation bar */
 .nav {
     position: absolute;
     top: 0;
@@ -29,6 +30,15 @@ body {
 
 .nav h1 {
     text-transform: uppercase;
+}
+
+.nav .click a {
+    color: whitesmoke;
+}
+
+.nav .click a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 ul {
@@ -146,12 +156,12 @@ section {
 
 h4 {
     font-size: 3vmin;
-    /* color: ; */
+    color: black;
     margin: 20px auto;
 }
 
 p {
-    /* color: ; */
+    color: black;
     padding: 0px 40px;
 }
 
@@ -159,6 +169,7 @@ p {
     margin-top: 30px;
 }
 
+/* Parks */
 .parks {
     width: 100%;
     height: 100vh;
@@ -188,38 +199,73 @@ p {
 }
 
 .parks-content p {
-    /* color: whitesmoke; */
+    color: whitesmoke;
 }
 
-.parks-wrapper .click {
+.parks-content .click {
     margin-top: 40px;
 }
 
-.resorts .row .column {
-    width: 50%;
+/* Resorts */
+.column-content {
+    width: 40%;
+}
+
+.column-content h1 {
+    font-size: 7vmin;
+    color: black;
+}
+
+.column-content .line{
+    margin-left: -1px;
+}
+
+.column-content p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.column-content .click {
+    margin-left: -10px;
+}
+
+.column-img {
+    width: 60%;
 }
 
 .resorts .resorts-images {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
 }
 
 .resorts-images img{
-    width: 250px;
+    max-width: 300px;
     margin: 10px;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    color: black;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484848;
 }
 
-.footer {
-    font-weight: normal;
-    font-size: 15px;
+footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
 }
 
-.footer a:hover {
+footer a {
+    color: whitesmoke;
+}
+
+footer a:hover {
     color: hsl(212, 21%, 14%);
     text-decoration: underline;
 }
@@ -249,8 +295,6 @@ footer {
         margin-top: -900px;
         transition: all 0.5s ease;
     }
-    
-    /* #89128d */
 
     .links li {
         margin: 30px auto;
@@ -260,4 +304,60 @@ footer {
         margin-top: 0px;
         border-bottom-right-radius: 30%;
     }
+
+    /* Events */
+    .row-wrapper {
+        flex-direction: column;
+    }
+
+    .row-wrapper .column {
+        margin: 20px auto;
+    }
+
+    .column-img {
+        max-width: 90%;
+    }
+
+    /* Parks */
+    .parks-content {
+        width: 100%;
+    }
+
+    /* Resorts */
+    .resorts .column-content {
+        width: 100%;
+    }
+
+    .resorts-images {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resorts-images img {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
+
+/* Animations */
+li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.click:hover {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 2px 2px 5px black;
+}
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
